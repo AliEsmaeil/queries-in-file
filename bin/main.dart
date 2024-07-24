@@ -1,11 +1,9 @@
 import 'dart:convert';
 import 'dart:io';
-import 'dart:typed_data';
 
 void main() async {
-  final String? queries = await getInsertQuery(
-      fileName:
-          'C:\\Users\\alies\\OneDrive\\Desktop\\dart_application_1\\bin\\inserts.txt');
+  final String? queries =
+      await getInsertQuery(fileName: 'give it the file path');
 
   if (queries == null) {
     print('No Data found or file not exist');
@@ -56,28 +54,3 @@ void writeQuery({required List<String> values}) {
   }
   print(query);
 }
-/*
- Symbol lib = Symbol('my_lib');
-  Symbol cls = Symbol('Foo');
-  Symbol function = Symbol('m1');
-
-  MirrorSystem isolateMirror = currentMirrorSystem();
-  LibraryMirror libMirror = isolateMirror.findLibrary(lib);
-
-  print(
-      'No of classes in ${MirrorSystem.getName(lib)} : ${libMirror.declarations.length}');
-
-  libMirror.declarations.forEach((key, value) {
-    print(key);
-  });
-
-  if (libMirror.declarations.containsKey(cls)) {
-    ClassMirror clsMirror = reflectClass(Foo);
-    print('members in foo class');
-
-    clsMirror.declarations.forEach((key, value) {
-      print(key);
-    });
-
-    clsMirror.invoke(function, []);
- */

@@ -1,0 +1,26 @@
+
+/*
+ Symbol lib = Symbol('my_lib');
+  Symbol cls = Symbol('Foo');
+  Symbol function = Symbol('m1');
+
+  MirrorSystem isolateMirror = currentMirrorSystem();
+  LibraryMirror libMirror = isolateMirror.findLibrary(lib);
+
+  print(
+      'No of classes in ${MirrorSystem.getName(lib)} : ${libMirror.declarations.length}');
+
+  libMirror.declarations.forEach((key, value) {
+    print(key);
+  });
+
+  if (libMirror.declarations.containsKey(cls)) {
+    ClassMirror clsMirror = reflectClass(Foo);
+    print('members in foo class');
+
+    clsMirror.declarations.forEach((key, value) {
+      print(key);
+    });
+
+    clsMirror.invoke(function, []);
+ */
