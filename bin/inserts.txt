@@ -1,0 +1,1 @@
+INSERT INTO article (id, name) VALUES (1, 'Banana') ; INSERT INTO article (id, name) VALUES (2, 'Orange') ; INSERT INTO article (id, name) VALUES (3, 'Apple') ;
